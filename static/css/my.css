@@ -1,0 +1,50 @@
+hr{ 
+  height: 1px;
+  color: red;
+  background-color: red;
+  border: none;
+}
+
+
+
+a:link {
+    color:red;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color:red;
+    text-decoration: none;
+}
+
+
+
+a:hover {
+    text-decoration: none;
+    background-color:white;
+    color:black;
+}
+
+
+pre {
+    margin: 1em 0em 1em;
+    padding: 0.5em 0.5em 0.5em;
+}
+
+.logo {
+    text-align:center;
+}
+
+.logo pre{
+    border:None;
+    background:None;
+    color:red;
+    display: inline-block !important;
+    text-align: left !important;
+}
+
+.logo pre:hover{
+    background-color:#222222;
+}
+
