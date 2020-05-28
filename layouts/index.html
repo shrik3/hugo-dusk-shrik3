@@ -4,14 +4,15 @@
 
 
 <main>
-
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "in" site.Params.mainSections) }}
   {{ range $paginator.Pages }}
     {{ .Render "summary" }}
 {{ end }}
 
+
 {{ partial "paginator-menu.html" . }}
 
 </main>
+
 
 {{ partial "footer.html" . }}
