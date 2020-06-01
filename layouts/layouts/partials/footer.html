@@ -1,6 +1,7 @@
   <footer>
 
   {{ partial "social-links-footer.html" . }}
+  {{ partial "links.html" . }}
 
   <div class="copyright"> {{ .Site.Copyright | safeHTML }} </div>
 
@@ -8,7 +9,7 @@
 
 </div> <!-- main -->
 
+{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
 </body>
 <!-- config katex -->
-{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
 </html>
